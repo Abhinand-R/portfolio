@@ -40,3 +40,18 @@ nav ul a{
 nav ul a:hover{
     opacity: 1;
 }
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+span{
+    background: linear-gradient(to right,rgb(83, 224, 83),rgb(59, 167, 255));
+    background-clip: text;
+    color: transparent;
+}
