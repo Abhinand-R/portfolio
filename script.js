@@ -1,3 +1,4 @@
+window.alert("please open in desktop mode its not responsive at this time")
 function openFullscreen(imgSrc) {
     const fullscreenImg = document.getElementById('fullscreenImg');
     const fullscreenContainer = document.getElementById('fullscreenImage');
@@ -12,7 +13,6 @@ function closeFullscreen() {
     document.getElementById('fullscreenImage').style.display = 'none';
 }
 
-// Close fullscreen view when clicking outside the image
 document.getElementById('fullscreenImage').addEventListener('click', function(e) {
     if (e.target === this) {
         closeFullscreen();
@@ -20,7 +20,5 @@ document.getElementById('fullscreenImage').addEventListener('click', function(e)
 });
 
 document.querySelector('.download-section .btn').addEventListener('click', function(e) {
-    // If you want to perform any actions before or after the download, you can do so here
-    console.log('Download initiated');
-    // The actual download will be handled by the browser due to the 'download' attribute
+     console.log('Download initiated');
 });
