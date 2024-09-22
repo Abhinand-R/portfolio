@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <script src="script.js"></script>
+    
     
     <nav>
         <a href="#" class="logo"><span>Abhi</span></a>
@@ -95,7 +95,7 @@
                         <span><i class='bx bxs-graduation'></i>Education</span>
                     </h2>
                     <div class="timeline-box">
-                        <div class="content-box">
+                        <div class="content-box" id="cb">
                             <div class="date">
                                 <i class='bx bx-calendar'></i>
                                 2021-2025
@@ -104,16 +104,16 @@
                             <p>I am currently pursuing my B.Tech degree in Computer Science at St. Joseph's College of Engineering and Technology, Palai. Now in 
                                 my 7th semester, I have maintained a commendable CGPA of 6.75.</p>
                         </div>
-                        <div class="content-box">
+                        <div class="content-box" id="cb">
                             <div class="date">
                                 <i class='bx bx-calendar'></i>
                                 2011-2021
                             </div>
                             <h3>School</h3>
                             <p>My foundation in technology and computer science was established at Aravinda Vidyamandiram, Pallickathodu. There, I completed my higher secondary education in the Computer Science stream, graduating with 88% in 2021. This strong academic background, including 83% in my 10th standard
-                                 (2019), set the stage for my ongoing pursuits in technology.</p>
+                                 (2019).</p>
                         </div>
-                        <div class="content-box">
+                        <div class="content-box" id="cb">
                             <div class="date">
                                 <i class='bx bx-calendar'></i>
                                 2023-May
@@ -132,36 +132,51 @@
                     </h2>
                     <div class="timeline-box">
                         <div class="content-box">
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                2021-2025
+                            <div class="content-text">
+                                <div class="date">
+                                    <i class='bx bx-calendar'></i>
+                                    2021-2025
+                                </div>
+                                <h3>C-Training</h3>
+                                <p>Spoken Tutorial-Conducted by IIT Bombay.</p>
                             </div>
-                            <h3>College</h3>
-                            <p>I am currently pursuing my B.Tech degree in Computer Science at St. Joseph's College of Engineering and Technology, Palai. Now in 
-                                my 7th semester, I have maintained a commendable CGPA of 6.75.</p>
+                            <img src="images/ctext.png" alt="Certification 1" onclick="openFullscreen(this.src)">
                         </div>
                         <div class="content-box">
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                2021-2025
+                            <div class="content-text">
+                                <div class="date">
+                                    <i class='bx bx-calendar'></i>
+                                    2021-2025
+                                </div>
+                                <h3>Managerial Skill Development</h3>
+                                <p>Workshop from Tesseract 5.0,Event of IEEE.</p>
                             </div>
-                            <h3>College</h3>
-                            <p>I am currently pursuing my B.Tech degree in Computer Science at St. Joseph's College of Engineering and Technology, Palai. Now in 
-                                my 7th semester, I have maintained a commendable CGPA of 6.75.</p>
+                            <img src="images/managerial.png" alt="Certification 2" onclick="openFullscreen(this.src)">
                         </div>
                         <div class="content-box">
-                            <div class="date">
-                                <i class='bx bx-calendar'></i>
-                                2021-2025
+                            <div class="content-text">
+                                <div class="date">
+                                    <i class='bx bx-calendar'></i>
+                                    2021-2025
+                                </div>
+                                <h3>Web Development</h3>
+                                <p>Hosted by Tinkerhub and GDSC.</p>
                             </div>
-                            <h3>College</h3>
-                            <p>I am currently pursuing my B.Tech degree in Computer Science at St. Joseph's College of Engineering and Technology, Palai. Now in 
-                                my 7th semester, I have maintained a commendable CGPA of 6.75.</p>
+                            <img src="images/webdev.png" alt="Certification 3" onclick="openFullscreen(this.src)">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="fullscreen-image" id="fullscreenImage">
+        <span class="close-button" onclick="closeFullscreen()">&times;</span>
+        <img src="" alt="Fullscreen Image" id="fullscreenImg">
+    </div>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
